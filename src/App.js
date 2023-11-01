@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import AlienDate from './services/AlienDate';
+import AlienTime from './services/AlienTime';
+import EarthDate from './services/EarthDate';
+import EarthTime from './services/EarthTime';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <AlienDate/>
+        <AlienTime/>
+        <EarthDate/>
+        <EarthTime/>
       </header>
     </div>
   );
